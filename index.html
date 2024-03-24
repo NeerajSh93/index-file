@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <title>Document</title>
+</head>
+<style>
+    .main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+     background-color: rgb(11, 144, 177);
+    padding: 0 0.4vw;
+    border-bottom: 2px solid #dadada;
+    color: white;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 900;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    
+}
+.nav h4{
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+.nav-part2 a{
+    margin: 1vw;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    color: rgb(11, 144, 177);;
+    font-weight: 700;
+    font-size: 1.4vw;
+    background-color: white;
+}
+.content{
+    height: (100% - 80px);
+    display: flex;
+    margin-bottom: 7vw;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 0vw 0.4vw;
+}
+.do-para{
+    font-size: 6vw;
+    margin-top: 9vw;
+    line-height: 0.3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+.first{
+    color: #a3a1a1;
+    font-size: 2vw;
+    width: 70%;
+    line-height: 2vw;
+    margin-bottom: 5vw;
+}
+ a{
+    padding: 1vw 2vw;
+    background-color: rgb(235, 12, 86);
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 1vw;
+    margin-top: 4vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+.right{
+    height: 100%;
+    width: 50%;
+}
+
+                                        /* part-2 */    
+    .box1-para{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        padding: 3vw 5vw;
+        line-height: 2vw;
+        gap: 8vw;
+        margin-left: 20vw;
+        font-size: 1.6vw;
+    }
+    .box1 h2{
+        text-align: center;
+        font-size: 4vw;
+        padding-top: 4vw;
+    }
+    .box1{
+        background-color: lightgrey;
+    }
+    .box2{
+        display: flex;
+    }
+    .box2-left{
+        height: 100%;
+        width: 50%;
+    }    
+    .box2-right{
+        height: 100%;
+        width: 50%;
+        text-align: right;
+    }              
+    .box2-right h2{
+        font-size: 4vw;
+        padding-top: 4vw;
+    }
+    .box2-right p{
+        font-size: 1.6vw;
+    }
+    .box3{
+        display: flex;
+        background-color: lightgreen;
+    }
+    .box3-right{
+        height: 100%;
+        width: 50%;
+    }
+    .box3-left{
+        height: 100%;
+        width: 50%;
+    }
+    .box3-left h2{
+        font-size: 4vw;
+        padding-top: 4vw;
+    }
+    .box3-left p{
+        font-size: 1.6vw;
+    }
+                                        
+
+
+@media (max-width:600px) {
+    .nav{
+        width: 100%;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 4vw;
+    }
+    .nav-part2 {
+         gap: 5vw;
+    }
+    .nav-part2 h4{
+        font-size: 3vw;
+    }
+    .nav-part2 button{
+        font-size: 3vw;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        height: 50%;
+        width: 100%;
+    }
+    .do-para{
+        font-size: 9vw;
+        margin-top: 12vw;
+        line-height: 0.3vw;
+    }
+    .first{
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+    a{
+        margin-top: 4vw;
+        font-size: 3vw;
+    }
+    .right{
+        height: 50%;
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .image-im{
+        height:400px;
+        width: 400px;
+        position: relative;
+    }
+    .image-im.right-image{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .box1-para{
+        flex-direction: column;
+        font-size: 4vw;
+        line-height: 4.4vw;
+        gap: 1vw;
+    }
+    .box1 h2{
+        font-size: 7vw;
+    }
+    .box2{
+        display: flex;
+        flex-direction: column;
+        padding: 3vw 5vw;
+    }
+    .box2-left{
+        height: 50%;
+        width: 50%;
+        padding: 0 0.4vw;
+    }
+    .image{
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+    .image .ing{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .box2-right{
+        height: 50%;
+        width: 100%;
+    }
+    .box2-right h2{
+        font-size: 7vw;
+    }
+    .box2-right p{
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+    }
+    .box3-left{
+        height: 50%;
+        width: 100%;
+    }
+    .box3-left h2{
+        font-size: 7vw;
+    }
+    .box3-left p{
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .box3-right{
+        height: 50%;
+        width: 50%;
+        padding: 0 0.4vw;
+    }
+    .box3-right .boy{
+        height: 80vw;
+        width: 80vw;
+    }
+}
+</style>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h2>CryptoGoal.io</h2>
+            <div class="nav-part2">
+                <h4>Home</h4>
+                <h4>AboutUs</h4>
+                <h4>Contact</h4>
+                 <a href="https://www.youtube.com/watch?v=r5-D-4fnosE&t=487s" target="_blank" rel="noopener noreferrer">LOGIN</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="do-para">
+                    <p>TALK IS CHEAP.</p>
+                    <p>CRYPTO'S NOT.</p>
+                </div>
+                <p class="first">CryptoGoal is a goal Keeping tool that assest uses with creating accountability smart contacts. </p>
+                <a href="http://google.com" target="_blank" rel="noopener noreferrer">START NOW</a>
+            </div>
+            <div class="right">
+                <div class="image-im">
+                    <img src="coding-.png" alt="" class="right-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="box1">
+                <h2>How it's works</h2>
+                <div class="box1-para">
+                    <p class="first-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui amet numquam magni molestiae non?</p>
+                    <p class="second-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti provident dolor ex eos praesentium labore.</p>
+                    <p class="third-para ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel aperiam excepturi, nesciunt dicta nisi repudiandae!</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="box2-left">
+                    <div class="image">
+                        <img src="coding-.png" alt="" class="ing">
+                    </div>
+                </div>
+                <div class="box2-right">
+                    <h2>What is CryptoGoal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et consequatur perferendis iusto saepe amet omnis expedita quo recusandae, facilis accusantium asperiores. Accusantium incidunt excepturi explicabo id delectus assumenda repudiandae soluta!</p>
+                </div>
+                </div>
+            <div class="box3">
+                <div class="box3-left">
+                    <h2>Whta's the deadline for achieving your goal?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos distinctio quis ipsa expedita esse voluptatem? Earum aspernatur rem eveniet vel, expedita, adipisci ut culpa minus dignissimos rerum harum aperiam soluta.</p>
+                </div>
+                <div class="box3-right">
+                    <div class="image">
+                        <img src="coding_boy.svg" alt="" class="ing">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+</body>
+</html>
